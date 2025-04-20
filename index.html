@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ka Wa Yip's Pages Site</title>
-    <meta name="google-site-verification" content="i3ioMspgtEZtfpQuemqi94AWPbQwKNCYJuS8qXJvqe0" />
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- <h1>Greeting!</h1> -->
-    <p>Ka Wa Yip</p>
-    <p>
-        Postdoc at 
-        <a href="https://www.northeastern.edu/" style="color: #C8102E">Northeastern University</a></p>
-    <p>
-        Email:
-        <a href="mailto:ka.yip&commat;northeastern&period;edu" style="color: #f0a90a">ka.yip&commat;northeastern&period;edu</a>
-    </p>
-  </body>
+
+<head>
+  <title>Ka Wa Yip's Pages Site</title>
+  <meta name="google-site-verification" content="i3ioMspgtEZtfpQuemqi94AWPbQwKNCYJuS8qXJvqe0" />
+  <link href="style.css" rel="stylesheet">
+  <!-- [Attributes by Finsweet] Copy to clipboard -->
+  <script>
+    function copyURI(evt) {
+      evt.preventDefault();
+      navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
+        /* clipboard successfully set */
+      }, () => {
+        /* clipboard write failed */
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <!-- <h1>Greeting!</h1> -->
+  <p>Ka Wa Yip</p>
+  <p>
+    Postdoc at
+    <a href="https://www.northeastern.edu/" style="color: #C8102E">Northeastern University</a>
+  </p>
+  <p>
+    Email:
+    <!-- <a href="mailto:ka.yip&commat;northeastern&period;edu" -->
+    <a href="ka.yip&commat;northeastern&period;edu"
+      style="color: #ff9a00"
+      onclick="copyURI(event)">
+      ka.yip&commat;northeastern&period;edu
+    </a>
+  </p>
+</body>
+
 </html>
