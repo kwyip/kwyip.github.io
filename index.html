@@ -14,6 +14,10 @@
       }, () => {
         /* clipboard write failed */
       });
+      if (document.getElementById('checkBox').checked)
+        document.getElementById('texto').innerHTML = "";
+      else
+        document.getElementById('texto').innerHTML = "[copied!]";
     }
   </script>
 </head>
@@ -28,12 +32,11 @@
   <p>
     Email:
     <!-- <a href="mailto:ka.yip&commat;northeastern&period;edu" -->
-    <a href="ka.yip&commat;northeastern&period;edu"
-      style="color: #ff9a00"
-      onclick="copyURI(event)">
+    <a id="checkBox" href="ka.yip&commat;northeastern&period;edu" style="color: #ff9a00" onclick="copyURI(event)">
       ka.yip&commat;northeastern&period;edu
     </a>
   </p>
+  <p id="texto"></p>
 </body>
 
 </html>
