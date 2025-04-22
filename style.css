@@ -1,1 +1,10 @@
-.className a:link { color: red; }
+/* .className a:link { color: red; } */
+
+.institution{
+    color: firebrick;
+}
+
+
+.email{
+    color: #ff9a00;
+}
